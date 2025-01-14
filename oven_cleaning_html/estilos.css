@@ -1,0 +1,676 @@
+/*Los elementos se organizarán de la siguiente manera: modal, aviso cookies, header, main y footer*/
+
+* {
+    margin: 0; /* Se eliminan los márgenes que vienen por defecto */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+}
+
+/* Modal */
+
+/* Este CSS afecta el "fondo" cuando aparece el modal */
+
+.fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    z-index: -1;
+}
+
+/* Este CSS afecta el estilo del modal en sí */
+
+.modal {
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 10;
+    background-color: rgb(36, 36, 36);
+    color: orange;
+    text-align: center;
+    border: 2.5px rgba(255, 255, 255, 0.7) solid;
+    position: relative;
+}
+
+/* Esto afecta el estilo botón de cerrar del modal */
+
+#botonCerrar {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* Esto cambia el estilo cuando el cursor esté encima del elemnto con esta id */
+
+#botonCerrar:hover {
+    color: #c70039;
+}
+
+/* Esto controla la anchura del input type="email" del modal */
+
+#email_modal {
+    width: auto;
+}
+
+/* Esta clase hace referencia al botón de enviar del modal */
+
+.boton {
+    color: white;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    background-color: darkorange;
+    margin: 3px auto;
+    cursor: pointer;
+}
+
+/* Esto controla el estilo cuando el cursos esté encima del botón de enviar */
+
+.boton:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Este código CSS cambia el estilo del texto que está en un elemneto "span" */
+
+.modal_contenido span {
+    color: white;
+}
+
+/* Aviso Cookies */
+
+/* Esta id define el estilo del aviso de cookies */
+
+#avisoCookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+}
+
+/* Este código controla el estilo de los enlaces del aviso de cookies, por ejemplo, le quita el estilo que viene por defecto de los enlaces en el aviso de cookies */
+
+#avisoCookies a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    color: darkorange;
+}
+
+/* Esto cambia el color del enlace en el aviso de cookies a naranja cuando el usuario ponga el cursor por encima */
+
+#avisoCookies a:hover {
+    color: orange;
+}
+
+/* Aquí se quitan los márgenes del aviso de cookies */
+
+#avisoCookies p {
+    margin: 0;
+}
+
+/* Aquí se define el estilo del botón de aceptar el aviso de cookies */
+
+#botonAceptarCookies {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* Aquí se cambia su estilo cuando el ratón esté por encima */
+
+#botonAceptarCookies:hover {
+    background-color: orange;
+}
+
+/* Header */
+
+/* Este código CSS afecta todo lo que esté comprendido en el header */
+
+header {
+    width: 100%;
+    height: 500px;
+    background-image: url(./imagenes/imagen_header.webp);
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+/* Aquí se centra el texto que aparezca en cada div del nav (barra de navegación) */
+
+nav>div {
+    text-align: center;
+}
+
+/* Se añade un margen a los párrafos que hay en los divs */
+
+header>div>p {
+    margin: 10px 0;
+}
+
+/* Aquí se define el estilo de la barra de navegación */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(36, 36, 36, 0.9);
+    width: 100%;
+    font-size: large;
+    top: 0;
+    position: absolute;
+}
+
+/* Aquí se declara el estilo de los enlaces que aparecen en los divs del nav */
+
+nav>div>a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Se cambia su color cuando el cursor esté por encima */
+
+nav>div>a:hover {
+    color: orange;
+}
+
+/* En esta clase se aplica una animación al texto del header */
+
+.h1_animado {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Main */
+
+/* Este código declara el estilo de todos los elementos "h1" dentro del main, hará que su color sea naranja */
+
+main h1 {
+    text-align: center;
+    color: orange;
+}
+
+/* Este código CSS declara el estilo de todo el main */
+
+main {
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* A continuación, se añade un margen a los siguientes elementos */
+
+main>h1, main>p, main>ul, main>.boton_llamada, main>.div1 {
+    margin-bottom: 20px;
+}
+
+/* Aquí se añade otro margen entre los li de la lista desordenada */
+
+main>ul>li {
+    margin-bottom: 10px;
+}
+
+/* Aquí se quita el estilo que viene por defecto en los enlaces */
+
+main a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Esta clase declara el estilo del botón de llamada que hay en el inicio */
+
+.boton_llamada {
+    color: white;
+    height: 40px;
+    width: 110px;
+    border-radius: 5%;
+    background-color: darkorange;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aquí se cambia el color del botón cuando el ratón esté por encima del botón */
+
+.boton_llamada:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Se añade un margen en el elemnto donde salga esta clase */
+
+.div1 {
+    margin: 10px;
+}
+
+/* Esta id corresponde con el "antes y después" de 2 hornos que aparecen en la página */
+/* Se crea un flex para que los dos divs que contienen las imágenes se centren */
+
+#antesYdespues {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Aquí se ajusta el estilo de estos divs */
+
+#antesYdespues>div {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Aquí se ajusta el estilo de las imágenes, asimismo se aplica una transición */
+
+#antesYdespues img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* En este hover se hace que la imagen desparezca al ajustar su opacidad a cero */
+
+#antesYdespues>div:hover img {
+    opacity: 0;
+}
+
+/* Esta id corresponde con la parte del inicio de la página debajo del "antes y después", al igual que antes, se crea un flex para dividir los 3 divs y centrarlos */
+
+#servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aquí se ajusta el estilo de los divs */
+
+#servicios>div {
+    height: auto;
+    margin: 7px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+/* Aquí se define el estilo de las imágenes */
+
+#servicios img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Aquí se cambia su estilo para que cuando el ratón esté por encima  la imagen se agrande */
+
+#servicios>div:hover img {
+    transform: scale(1.1);
+}
+
+/* Esta clase se aplica al texto que hay debajo de las imágenes y define su estilo */
+
+.servicios-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Aquí se aplica un margen entre el texto anterior y el siguiente elemento */
+
+.servicios-texto>div {
+    margin: 7px;
+}
+
+/* Este código cambia el color del texto que hay por debajo de cada imagen para que el usuario sepa que son enlaces */
+
+.servicios-texto>div>h3>a:hover {
+    color: orange;
+}
+
+/* Este código cambia el color del texto que aparece en la siguiente sección y aplica un margen para separarlo de otros elementos */
+
+.texto1 {
+    color: white;
+    margin: 10px;
+}
+
+/* Aquí se cambia el color del enlace (en la palabra "aquí") cuando el ratón esté por encima */
+
+.texto1 >a:hover {
+    color: orange;
+}
+
+/* Elementos de la página de contacto (formulario...) */
+
+/* Esta clase se aplica en la página de contacto, crea un flex para dividir y centrar 2 divs, uno con la información de contacto y el otro con el formulario */
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Aquí se añade un margen entre los 2 divs */
+
+.contacto>div {
+    margin: 7px;
+}
+
+/* Aquí se define el estilo de los campos del formulario */
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    background-color: rgb(41, 41, 45);
+    border: 1px white solid;
+    color: white;
+    margin: 0 auto;
+}  
+
+/* Aquí se cambia el color del texto con la información de contacto */
+
+.contacto>div>h2 {
+    color: white;
+}
+
+/* Aquí se cambia el color de los enlaces de la página de contacto (el télefono, email y dirección, para que el usuario sepa que son enlaces) */
+
+.contacto>div>h2>a:hover {
+    color: orange;
+}
+
+/* Aquí se declara el estilo del formulario, se centra horizontalmente y verticalmente con las propiedades del flex */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+/* Aquí se cambia el color del texto que está por encima de cada campo del formulario y se aplica un margen */
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Aquí se ajustan los campos del formulario mediante padding y margin y se declara su anchura */
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 250px;
+}
+
+/* Ya que el mensaje va a sur un texto más largo que los otros, se declara su anchura para hacerlo más grande */
+
+#mensaje {
+    height: 150px;
+}
+
+/* Aquí se cambia el estilo del botón de enviar del formulario */
+
+#enviar {
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Aquí se cambia el estilo del botón de enviar del formulario para que sea un naranja más claro */
+
+#enviar:hover {
+    background-color: orange;
+}
+
+/* Fin de los elementos de la página de contacto */
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex1>div {
+    height: auto;
+    margin: 7px;
+}
+
+.flex1>div>h2 {
+    color: white;
+}
+
+.flex1>div>h2:hover {
+    color: orange;
+}
+
+.flex1>ul>li:hover {
+    color: orange;
+}
+
+.flex1>ul>li {
+    list-style: square;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.flex2>div {
+    flex: 1;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flex2>div>h2:hover {
+    color: orange;
+}
+
+.videos {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+}
+.videos > div > iframe {
+    margin: 5px;
+    width: 380px;
+    height: 200px;
+}
+
+.color_naranja {
+    color: orange;
+}
+
+/* Elementos de la "Galería" de la página de inicio */
+
+/* Esta id corresponde con la última sección del main de la página de inicio, en ella se declara su estilo y se crea un grid (cuadrícula) de 5 "cuadrados" cada línea, donde van las imágenes */
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Aquí se declara el estilo de cada imagen de la galería, además se crea una transición para cada imagen cuando el ratón esté por encima de cada imagen*/
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Aquí se agranda ligeramente la imagen cuando el usuario ponga el cursor por encima de cada iamgen */
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* Fin de los elementos de la "Galería" de la página de inicio */
+
+/* Galería de la página de precios */
+
+#galeria_precios {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#galeria_precios div {
+    width: auto;
+    height: auto;
+}
+
+#galeria_precios img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#galeria_precios img:hover {
+    transform: scale(1.1);
+}
+
+#galeria_precios h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Fin de los elementos de la "Galería" de la página de precios */
+
+/* Este código ajusta el estilo de la tabla de la página de precios */
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    background-color: orange;
+    margin: 10px auto;
+}
+
+/* Este código ajusta el estilo de cada elemento de la tabla */
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Footer */
+
+/* Este código afecta todo el footer, la función que realiza es cambiar el color de fondo */
+
+footer {
+    background-color: rgb(41, 41, 45);
+}
+
+/* Esta clase se aplica para crear un flex entre los 3 divs del footer (sección con todas las páginas de la web, contacto y el marco de Google Maps) */
+
+.footer_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Se cambia el color de la letra de estos divs y se centran horizontalmente */
+
+.footer_flex>div {
+    color: white;
+    margin: 0 auto;
+}
+
+/* Aquí se quita el estilo de los enlaces del footer que viene por defecto */
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Aquí se aplica un padding para ajustar el marco de Google Maps */
+
+footer iframe {
+    padding: 5px;
+}
+
+/* Aquí se cambia el color de la letra de los enlaces del footer cuando el cursor este por encima */
+
+footer a:hover {
+    color: orange;
+}
+
+/* Esta clase se aplica a la última parte de la página (el copyright), define el estilo de la misma */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: orange;
+}

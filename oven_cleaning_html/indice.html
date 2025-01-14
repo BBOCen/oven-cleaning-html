@@ -1,0 +1,270 @@
+<!-- Aquí se define el tipo de documento, en este caso será HTML -->
+<!DOCTYPE html>
+<!-- Aquí se define la lengua de la página -->
+<html lang="en">
+<!-- Este es el head de la página, aquí se define toda la información relativa al documento HTML. Como los caracteres que se usan, las hojas de estilo que se importarán, las fuentes que se usará, etc. El JavaScript se coloca al final para que cargue cuando todos los otros elementos se hayan cargado -->
+<!-- Esta parte no es visible -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta es la etiqueta para insertar la fuente de Google Fonts a la página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Esta es la etiqueta para insertar la hoja de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Aquí se insertar el JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Esta parte funciona para darle un título a la página (este texto saldrá en la pestaña) -->
+    <title>Inicio</title>
+</head>
+<!-- Aquí comienza el body (la parte visible de la página) -->
+<body>
+    <!-- Aquí empieza el header (la cabecera de la página) -->
+    <header>
+        <!-- Este div es el fondo del modal (la alerta que saldrá después de esperar 10 segundos) -->
+        <div class="fondo" id="fondo">
+            <!-- Este div define las características del modal -->
+            <div class="modal">
+                <div class="modal_contenido">
+                    <div id="botonCerrar"><strong>&times;</strong></div>
+                    <h2>No te pierdas nada</h2>
+                    <br>
+                    <span>Recibe en tu buzón todas las actualizaciones más recientes.</span>
+                    <br>
+                    <br>
+                    <!-- Como se pide el email al usuario, se usa un formulario y un input="email" para enviarlo -->
+                    <form>
+                        <label>Introduce tu email para unirte a nuestro boletín:</label>
+                        <input type="email" id="emailModal">
+                        <br>
+                        <input type="submit" class="boton" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Este div es el aviso de cookies, ya que se guardará un archivo en el sistema del usuario para que el modal no se siga mostrando -->
+        <div id="avisoCookies">
+            <!-- En este aviso se coloca un enlace externo a la página de la política de cookies -->
+            <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando por este sitio, aceptas nuestra <a href="politica_cookies.html">política de cookies</a>.</p>
+            <!-- Este botón sirva para que el usuario dé su consentimiento -->
+            <button id="botonAceptarCookies">Aceptar</button>
+        </div>
+        <!-- Aquí se define la barra de navegación -->
+        <nav>
+            <div><a href="indice.html"><strong>Inicio</strong></a></div>
+            <div><a href="quienes_somos.html"><strong>Quiénes somos</strong></a></div>
+            <div><a href="contacto.html"><strong>Contacto</strong></a></div>
+            <div><a href="precios.html"><strong>Precios</strong></a></div>
+            <div><a href="servicios.html"><strong>Servicios</strong></a></div>
+        </nav>
+        <!-- En este texto, se define una animación que ocurrirá cada vez que se cargue la página --> 
+        <div class="h1_animado">
+            <h1>Los mejores limpiadores de hornos de Málaga</h1>
+            <br>
+            <h1>Tenemos el mejor servicio de toda la provincia</h1>
+        </div>
+        <!-- Aquí se cierra el header (cabecera) -->
+    </header>
+    <!-- Aquí se abre el main (la parte principal de la página) -->
+    <main>
+        <h1>Málaga Oven Cleaning</h1>
+        <br>
+        <p>Somos una empresa local y familiar que trabaja en toda la provincia. Ofrecemos un servicio profesional de
+            limpieza de hornos con productos ecológicos y resultados impecables. Estas son solo algunas de las ventajas de nuestro servicio:</p>
+        <!-- Esta es una lista ordenada de las ventajas del servicio de la empresa -->
+            <ol>
+            <li><strong>Resultados impecables:</strong> Utilizamos equipos especializados y productos ecológicos para
+                garantizar una limpieza profunda y resultados de primera clase en cada servicio.</li>
+            <li><strong>Experiencia local:</strong> Como un negocio local independiente establecido en 2011, conocemos
+                las necesidades específicas de nuestros clientes.</li>
+            <li><strong>Eco-friendly:</strong> Nuestros productos de limpieza son biodegradables y seguros para el medio
+                ambiente, asegurando que su horno esté limpio sin comprometer la salud de su hogar.</li>
+            <li><strong>Sin tiempo de espera tras la limpieza:</strong> Podrás utilizar tu horno inmediatamente después
+                de la limpieza. No habrá ni olores desagradables ni residuos de productos químicos.</li>
+        </ol>
+        <br>
+        <!-- En este enlace se define un div que actúa como un botón que al pulsarlo llamará al número: 0034912356789 -->
+        <a href="tel:0034912356789">
+            <div class="boton_llamada">
+                <h2><strong>Llámanos</strong></h2>
+            </div>
+        </a>
+        <div class="div1">
+            <h1>Nos especializamos en mantener tu horno limpio</h1>
+        </div>
+        <!-- Esta parte de la página funcionará como un "antes y después", por lo que se ponen dos divs con imágenes dentro de otro, para que sirvan para comparar las imágenes -->
+        <div id="antesYdespues">
+            <div>
+                <img src="./imagenes/horno_antes.webp" alt="Antes de la limpieza">
+            </div>
+            <div>
+                <img src="./imagenes/horno_despues.webp" alt="Después de la limpieza">
+            </div>
+        </div>
+        <h1>¿Qué servicios proveemos?</h1>
+        <!-- En esta parte de la página se define una sección que tiene 3 imágenes, y que al hacer click sobre ellas, llevará al usuario a la página de servicios (servicios.html) -->
+        <div id="servicios">
+            <div>
+                <a href="servicios.html"><img src="./imagenes/horno_detalles.webp" alt="Limpieza de hornos"></a>
+            </div>
+            <div>
+                <a href="servicios.html"><img src="./imagenes/fogo_detalles.webp" alt="Limpieza de fogones"></a>
+            </div>
+            <div>
+                <a href="servicios.html"><img src="./imagenes/microondas_detalles.webp" alt="Limpieza de microondas"></a>
+            </div>
+        </div>
+        <!-- De la misma manera que el anterior, el texto dentro de este div saldrá debajo de cada imagen al que le corresponde, y también al hacer click sobre él, llevará al usuario a la página de servicios -->
+        <div class="servicios-texto">
+            <div>
+                <h3><a href="servicios.html">Limpieza de hornos</a></h3>
+            </div>
+            <div>
+                <h3><a href="servicios.html">Limpieza de fogones</a></h3>
+            </div>
+            <div>
+                <h3><a href="servicios.html">Limpieza de microondas</a></h3>
+            </div>
+        </div>
+        <!-- En esta sección el usuario puede darle click a la palabra "aquí" y le llevará a la página de los precios (precios.html) -->
+        <h1>¿Quieres saber nuestros precios?</h1>
+        <p class="texto1">Haz clic <a href="precios.html"><strong>aquí</strong></a> para conocer los precios de nuestros servicios.</p>
+        <!-- Al igual que en la sección anterior, al pulsar sobre la palabra "aquí", el enlace llevará al usuario a la página de contacto (contacto.html) -->
+        <h1>¿Quieres contratar nuestros servicios?</h1>
+        <p class="texto1">Haz clic <a href="contacto.html"><strong>aquí</strong></a> para ponerte en contacto con nostros.</p>
+        <h1>Más ventajas de nuestros servicios</h1>
+        <!-- En esta sección, se utiliza un div con la clase "flex1", el cual tiene una propiedad de "display:flex", enter otras, para crear tres listas desordenadas que tendrán tres "li". De esta manera, se tendrán tres listas con tres características cada una al lado de la otra  -->
+        <div class="flex1">
+            <ul>
+                <li>
+                    <h2>Flexibilidad en horarios de servicio</h2>
+                </li>
+                <li>
+                    <h2>Precios asequibles y competitivos</h2>
+                </li>
+                <li>
+                    <h2>Atención personalizada</h2>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Empresa local con conocimiento del mercado</h2>
+                </li>
+                <li>
+                    <h2>Amabilidad y trato cordial</h2>
+                </li>
+                <li>
+                    <h2>Disponibilidad para urgencias</h2>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Rapidez en la ejecución de servicios</h2>
+                </li>
+                <li>
+                    <h2>Eficiencia en la limpieza</h2>
+                </li>
+                <li>
+                    <h2>Profesionalidad en cada tarea</h2>
+                </li>
+            </ul>
+        </div>
+        <!-- De manera similar a la sección anterior, se utiliza un div con la clase "flex2", que tiene una propiedad de "display:flex", para crear una sección en la apareza tres divs al lado de cada uno con un texto (de las ventajas del servicio) -->
+        <div class="flex2">
+            <div>
+                <h2>RÁPIDOS Y PUNTUALES</h2>
+                <br>
+                Somos puntuales y trabajamos lo más rápido y eficazmente posible para ahorrarte tiempo y mantener
+                nuestros precios lo más competitivos posible. Todos nuestros trabajadores tienen un mínimo de 5 años de
+                experiencia.
+            </div>
+            <div>
+                <h2>PRODUCTOS SEGUROS</h2>
+                <br>
+                Todos nuestros productos han sido probados por la industria para garantizar la seguridad en tu hogar.
+                Seguimos todas las recomendaciones de la industria, lo que te permite utilizar tu horno inmediatamente y
+                mantener a las mascotas, los niños y los asmáticos perfectamente seguros.
+            </div>
+            <div>
+                <h2>PRECIOS COMPETITIVOS</h2>
+                <br>
+                En comparación con otras empresas del sector, tenemos un precio muy competitivo y ofrecemos un mejor
+                servicio. No encontrarás precios más baratos ni un servicio de mejor calidad.
+            </div>
+        </div>
+
+        <h1>Galería</h1>
+        <!-- Aquí se crea una "galería" de imágenes, básicamente, en la id de galeria, se define una propiedad llamada "display:grid", la cual creará una especie de cuadrícula invisible donde se pondrán las imágenes sobre cada cuadrado (en los ajustes del CSS se puede definir cuantos "cuadrados" tendrá cada línea) -->
+        <div id="galeria">
+            <div><img src="./imagenes/0.jpg" alt="Imagen 0"></div>
+            <div><img src="./imagenes/1.webp" alt="Imagen 1"></div>
+            <div><img src="./imagenes/2.webp" alt="Imagen 2"></div>
+            <div><img src="./imagenes/3.webp" alt="Imagen 3"></div>
+            <div><img src="./imagenes/4.webp" alt="Imagen 4"></div>
+            <div><img src="./imagenes/5.webp" alt="Imagen 5"></div>
+            <div><img src="./imagenes/6.webp" alt="Imagen 6"></div>
+            <div><img src="./imagenes/7.webp" alt="Imagen 7"></div>
+            <div><img src="./imagenes/8.webp" alt="Imagen 8"></div>
+            <div><img src="./imagenes/9.webp" alt="Imagen 9"></div>
+            <div><img src="./imagenes/10.webp" alt="Imagen 10"></div>
+            <div><img src="./imagenes/11.webp" alt="Imagen 11"></div>
+            <div><img src="./imagenes/12.jpg" alt="Imagne 12"></div>
+            <div><img src="./imagenes/13.webp" alt="Imagen 13"></div>
+            <div><img src="./imagenes/14.webp" alt="Imagen 14"></div>
+            <div><img src="./imagenes/15.webp" alt="Imagen 15"></div>
+            <div><img src="./imagenes/16.webp" alt="Imagen 16"></div>
+            <div><img src="./imagenes/17.webp" alt="Imagen 17"></div>
+            <div><img src="./imagenes/18.jpg" alt="Imagen 18"></div>
+            <div><img src="./imagenes/19.jpg" alt="Imagen 19"></div>
+        </div>
+        <!-- Aquí se cierra el main (la parte principal de la página) -->
+    </main>
+    <!-- Aquí se abre el footer (el pie de la página) -->
+    <footer>
+        <!-- En el siguiente div se utliza las propiedades del flex para dividir el footer horizontalmente en 3 "secciones" --> 
+        <div class="footer_flex">
+            <!-- Esta es la primera "sección", en esta se pondrán todos los enlaces de las distintas partes de la página -->
+            <div>
+                <div>
+                    <h3><a href="indice.html"><strong>Inicio</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="quienes_somos.html"><strong>Quiénes somos</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="contacto.html"><strong>Contacto</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="precios.html"><strong>Precios</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="servicios.html"><strong>Servicios</strong></a></h3>
+                </div>
+            </div>
+            <!-- Esta es la segunda "sección", aquí se pone la información de contacto de la empresa -->
+            <div>
+                <!-- A continuación, en el texto del teléfono, se crea un enlace, que cuando el usuario lo pulse, llamará al número -->
+                <h3><span id="telefono2">Teléfono: </span><a href="tel:0034912356789">912356789</a></h3>
+                <!-- Aquí sucede algo similar a la parte anterior, se crea un enlace que cuando el usuario pulse sobre el email, se le llevará a su cliente de email para mandar un correo electrónico a la dirección que aparece abajo -->
+                <h3><span id="email2">Email: </span><a href="mailto:correo@limpieza.com">correo@limpieza.com</a></h3>
+                <!-- Aquí, al hacer click sobre la dirección, se le llevará al usuario a la página de Google Maps de la misma -->
+                <h3><span id="direccion">Dirección: </span><a href="https://maps.app.goo.gl/Hcvcowa9KhLPYaot6" target="_blank">C/ Eguiluz 1, Málaga, 29006</a></h3>
+            </div>
+            <!-- Esta es la tercera "sección", aquí se empotra un iframe (marco) de Google maps, de la dirección de antes -->
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1599.2055369893296!2d-4.4345879!3d36.7126875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79c889ffb7b%3A0x246a31fd9b2434b!2sC.%20Eguiluz%2C%201%2C%2029006%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1700734717696!5m2!1sen!2ses"
+                    width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Esta es la última parte de la página, es la parte del copyright que aparecerá abajo del todo -->
+        <div class="copyright">
+            <h5><strong>©2023 Copyright Málaga Oven Cleaning | Todos los derechos reservados</strong></h5>
+        </div>
+    </footer>
+    <!-- Aquí se cierra el footer (pie de página) -->
+</body>
+<!-- Aquí se cierra el body (parte visible de la página) -->
+</html>

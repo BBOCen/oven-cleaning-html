@@ -1,0 +1,173 @@
+<!-- Aquí se define el tipo de documento, en este caso será HTML -->
+<!DOCTYPE html>
+<!-- Aquí se define la lengua de la página -->
+<html lang="en">
+<!-- Este es el head de la página, aquí se define toda la información relativa al documento HTML. Como los caracteres que se usan, las hojas de estilo que se importarán, las fuentes que se usará, etc. El JavaScript se coloca al final para que cargue cuando todos los otros elementos se hayan cargado -->
+<!-- Esta parte no es visible -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta es la etiqueta para insertar la fuente de Google Fonts a la página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Esta es la etiqueta para insertar la hoja de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Aquí se insertar el JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Esta parte funciona para darle un título a la página (este texto saldrá en la pestaña) -->
+    <title>Inicio</title>
+</head>
+<!-- Aquí comienza el body (la parte visible de la página) -->
+<body>
+    <!-- Aquí empieza el header (la cabecera de la página) -->
+    <header>
+        <!-- Este div es el fondo del modal (la alerta que saldrá después de esperar 10 segundos) -->
+        <div class="fondo" id="fondo">
+            <!-- Este div define las características del modal -->
+            <div class="modal">
+                <div class="modal_contenido">
+                    <div id="botonCerrar"><strong>&times;</strong></div>
+                    <h2>No te pierdas nada</h2>
+                    <br>
+                    <span>Recibe en tu buzón todas las actualizaciones más recientes.</span>
+                    <br>
+                    <br>
+                    <!-- Como se pide el email al usuario, se usa un formulario y un input="email" para enviarlo -->
+                    <form>
+                        <label>Introduce tu email para unirte a nuestro boletín:</label>
+                        <input type="email">
+                        <br>
+                        <input type="submit" class="boton" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Este div es el aviso de cookies, ya que se guardará un archivo en el sistema del usuario para que el modal no se siga mostrando -->
+        <div id="avisoCookies">
+            <!-- En este aviso se coloca un enlace externo a la página de la política de cookies -->
+            <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando por este sitio, aceptas nuestra <a href="politica_cookies.html">política de cookies</a>.</p>
+            <!-- Este botón sirva para que el usuario dé su consentimiento -->
+            <button id="botonAceptarCookies">Aceptar</button>
+        </div>
+        <!-- Aquí se define la barra de navegación -->
+        <nav>
+            <div><a href="indice.html"><strong>Inicio</strong></a></div>
+            <div><a href="quienes_somos.html"><strong>Quiénes somos</strong></a></div>
+            <div><a href="contacto.html"><strong>Contacto</strong></a></div>
+            <div><a href="precios.html"><strong>Precios</strong></a></div>
+            <div><a href="servicios.html"><strong>Servicios</strong></a></div>
+        </nav>
+        <!-- En este texto, se define una animación que ocurrirá cada vez que se cargue la página --> 
+        <div class="h1_animado">
+            <h1>Los mejores limpiadores de hornos de Málaga</h1>
+            <br>
+            <h1>Tenemos el mejor servicio de toda la provincia</h1>
+        </div>
+        <!-- Aquí se cierra el header (cabecera) -->
+    </header>
+    <!-- Aquí se abre el main (la parte principal de la página) -->
+    <main>
+        <h1>Precios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Servicio</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Limpieza de fogones eléctricos o de gas</td>
+                    <td>Limpieza a fondo de un fogón (precio por cada fuego del fogón)</td>
+                    <td>5€</td>
+                </tr>
+                <tr>
+                    <td>Limpieza de microondas</td>
+                    <td>Limpieza a fondo de un microondas estándar</td>
+                    <td>20€</td>
+                </tr>
+                <tr>
+                    <td>Limpieza de horno microondas</td>
+                    <td>Limpieza a fondo de un horno microondas</td>
+                    <td>35€</td>
+                </tr>
+                <tr>
+                    <td>Limpieza horno individual</td>
+                    <td>Limpieza a fondo de un horno con una sola puerta</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>Limpieza horno doble</td>
+                    <td>Limpieza a fondo de un horno con dos compartimentos</td>
+                    <td>80€</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Tipos de hornos</h1>
+        <div id="galeria_precios">
+            <div><img src="./imagenes/fogon_electrico.webp" alt="Fogón eléctrico"></div>
+            <div><img src="./imagenes/fogon_gas.png" alt="Fogón de gas"></div>
+            <div><img src="./imagenes/microondas.jpg" alt="Microondas"></div>
+            <div><img src="./imagenes/horno_microondas.webp" alt="Horno microondas"></div>
+            <div><img src="./imagenes/horno_individual.jpg" alt="Horno individual"></div>
+            <div><img src="./imagenes/horno_doble.webp" alt="Horno doble"></div>
+        </div>
+        <div id="galeria_precios">
+            <h3>Fogón eléctrico</h3>
+            <h3>Fogón de gas</h3>
+            <h3>Microondas estándar</h3>
+            <h3>Horno microondas</h3>
+            <h3>Horno individual</h3>
+            <h3>Horno doble</h3>
+        </div>
+    </main>
+    <!-- Aquí se abre el footer (el pie de la página) -->
+    <footer>
+        <!-- En el siguiente div se utliza las propiedades del flex para dividir el footer horizontalmente en 3 "secciones" --> 
+        <div class="footer_flex">
+            <!-- Esta es la primera "sección", en esta se pondrán todos los enlaces de las distintas partes de la página -->
+            <div>
+                <div>
+                    <h3><a href="indice.html"><strong>Inicio</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="quienes_somos.html"><strong>Quiénes somos</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="contacto.html"><strong>Contacto</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="precios.html"><strong>Precios</strong></a></h3>
+                </div>
+                <div>
+                    <h3><a href="servicios.html"><strong>Servicios</strong></a></h3>
+                </div>
+            </div>
+            <!-- Esta es la segunda "sección", aquí se pone la información de contacto de la empresa -->
+            <div>
+                <!-- A continuación, en el texto del teléfono, se crea un enlace, que cuando el usuario lo pulse, llamará al número -->
+                <h3><span id="telefono2">Teléfono: </span><a href="tel:0034912356789">912356789</a></h3>
+                <!-- Aquí sucede algo similar a la parte anterior, se crea un enlace que cuando el usuario pulse sobre el email, se le llevará a su cliente de email para mandar un correo electrónico a la dirección que aparece abajo -->
+                <h3><span id="email2">Email: </span><a href="mailto:correo@limpieza.com">correo@limpieza.com</a></h3>
+                <!-- Aquí, al hacer click sobre la dirección, se le llevará al usuario a la página de Google Maps de la misma -->
+                <h3><span id="direccion">Dirección: </span><a href="https://maps.app.goo.gl/Hcvcowa9KhLPYaot6" target="_blank">C/
+                        Eguiluz 1, Málaga, 29006</a></h3>
+            </div>
+            <!-- Esta es la tercera "sección", aquí se empotra un iframe (marco) de Google maps, de la dirección de antes -->
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1599.2055369893296!2d-4.4345879!3d36.7126875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79c889ffb7b%3A0x246a31fd9b2434b!2sC.%20Eguiluz%2C%201%2C%2029006%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1700734717696!5m2!1sen!2ses"
+                    width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Esta es la última parte de la página, es la parte del copyright que aparecerá abajo del todo -->
+        <div class="copyright">
+            <h5><strong>©2023 Copyright Málaga Oven Cleaning | Todos los derechos reservados</strong></h5>
+        </div>
+    </footer>
+    <!-- Aquí se cierra el footer (pie de página) -->
+</body>
+</html>

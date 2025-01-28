@@ -17,4 +17,4 @@
 
 <h3>🚀 ¿Cómo ejecutar el proyecto?</h3>
 
-Puedes visualizar la página desde aquí: 
+Puedes visualizar la página desde aquí: https://bbocen.github.io/oven-cleaning-html/oven_cleaning_html/indice.html

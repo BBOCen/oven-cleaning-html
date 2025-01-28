@@ -8,7 +8,6 @@
 
 <h3>🌟 Características de la página</h3>
 <ul>
-  <li><strong>Diseño responsive:</strong> La página se adapta a diferentes tamaños de pantalla para ofrecer una experiencia óptima en dispositivos móviles y de escritorio.</li>
   <li><strong>Servicios destacados:</strong> Se presentan los principales servicios de limpieza de hornos, con descripciones claras y detalladas.</li>
   <li><strong>Formulario de contacto:</strong> Los usuarios pueden ponerse en contacto con la empresa fácilmente mediante un formulario.</li>
   <li><strong>Interactividad:</strong> Utilización de JavaScript para proporcionar interacciones y una navegación fluida.</li>

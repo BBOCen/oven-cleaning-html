@@ -1,20 +1,22 @@
-<h2>🧹 Página Web de Limpieza de Hornos Domésticos 🧹</h2>
+<h2>🧹 Domestic Oven Cleaning Website 🧹</h2>
 
-<p>Esta página web está desarrollada para una empresa especializada en la <strong>limpieza de hornos domésticos</strong>, utilizando tecnologías web como <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.</p>
+<p>This website is developed for a company specializing in <strong>domestic oven cleaning</strong>, using web technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
 
-<p>La web está diseñada para ofrecer una <strong>experiencia de usuario intuitiva y profesional</strong>, destacando los servicios que la empresa ofrece de manera clara y accesible.</p>
+<p>The website is designed to provide an <strong>intuitive and professional user experience</strong>, clearly and accessibly showcasing the services offered by the company.</p>
 
 <hr>
 
-<h3>🌟 Características de la página</h3>
+<h3>🌟 Website Features</h3>
 <ul>
-  <li><strong>Servicios destacados:</strong> Se presentan los principales servicios de limpieza de hornos, con descripciones claras y detalladas.</li>
-  <li><strong>Formulario de contacto:</strong> Los usuarios pueden ponerse en contacto con la empresa fácilmente mediante un formulario.</li>
-  <li><strong>Interactividad:</strong> Utilización de JavaScript para proporcionar interacciones y una navegación fluida.</li>
+  <li><strong>Featured services:</strong> The main oven cleaning services are presented with clear and detailed descriptions.</li>
+  <li><strong>Contact form:</strong> Users can easily get in touch with the company via a contact form.</li>
+  <li><strong>Interactivity:</strong> JavaScript is used to provide interactions and smooth navigation.</li>
 </ul>
 
 <hr>
 
-<h3>🚀 ¿Cómo ejecutar el proyecto?</h3>
+<h3>🚀 How to Run the Project?</h3>
 
-Puedes visualizar la página desde aquí: https://bbocen.github.io/oven-cleaning-html/oven_cleaning_html/indice.html
+You can view the page here: https://bbocen.github.io/oven-cleaning-html/oven_cleaning_html/indice.html
+
+Note: the page is in Spanish.
